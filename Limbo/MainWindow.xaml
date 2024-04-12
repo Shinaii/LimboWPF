@@ -1,0 +1,22 @@
+﻿<Window x:Class="Limbo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Limbo"
+        mc:Ignorable="d"
+        Title="Limbo" Height="150" Width="150"
+        WindowStyle="None" AllowsTransparency="True">
+    <Grid Background="Black">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Border Background="Black">
+            <TextBlock Name="idTextBlock" Text="" Margin="10" Foreground="White"/>
+        </Border>
+        <Border Background="Black" Grid.Row="1"/>
+        <Image x:Name="normalImage" Source="/Resource/key.png" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="1"/>
+        <Image x:Name="fadeImage" Source="/Resource/green-key.png" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="1" Opacity="0"/>
+    </Grid>
+</Window>
